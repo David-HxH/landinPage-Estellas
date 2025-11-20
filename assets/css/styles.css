@@ -8,14 +8,7 @@ body {
   width: 100%;
 }
 
-.navbar {
-  margin-top: 0;
-  padding-top: 0;
-  background: transparent;
-  width: 100%;
-  z-index: 10;
-}
-
+/************************************************************ Hero */
 .bg-hero {
   padding-top: 46px;
   background-image: url("../img/cielo-estrellado-2.jpg");
@@ -37,8 +30,7 @@ body {
   z-index: 2;
 }
 
-/* formulario*/
-
+/****************************************************** formulario*/
 .modal {
   display: none;
   position: fixed;
@@ -92,17 +84,7 @@ body {
   animation: fadeIn 0.3s ease-out;
 }
 
-/* animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* cuenta regresiva */
+/***************************************************** cuenta regresiva */
 :root {
   --bg: #0f1724;
   --card: #0b1220;
@@ -165,4 +147,14 @@ p.lead {
   font-size: 0.9rem;
   color: var(--muted);
   margin-top: 10px;
+}
+
+/************************************************ animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

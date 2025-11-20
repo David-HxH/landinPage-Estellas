@@ -23,7 +23,7 @@
 
   <body data-bs-theme="dark">
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg py-2 bg-body sticky-top">
+    <nav class="navbar navbar-expand-lg py-1 bg-body sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">Conferencias 2025</a>
 
@@ -44,6 +44,7 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
+            <a class="nav-link" href="#eventAbout">Sobre el evento</a>
             <a class="nav-link" href="#oradores">Oradores</a>
             <a class="nav-link" href="#agenda">Agenda</a>
             <a class="nav-link" href="#localizacion">Localización</a>
@@ -72,21 +73,39 @@
     </header>
 
     <main>
-      <section>
-        <p class="lead px-4 px-md-5 py-4 text-center text-light">
-          <em>Fragmentos Interestelares</em> propone comprender qué nos revelan
-          estos objetos sobre la formación de otros mundos, la vida en el cosmos
-          y nuestra posición en él. Esta es una invitación a replantear nuestra
-          mirada hacia el universo y a preguntarnos: ¿Qué significa para la
-          humanidad encontrarse con fragmentos provenientes de más allá del Sol?
-        </p>
+      <section class="py-5 bg-dark text-light" id="eventAbout">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+              <p class="lead fs-5 text-light">
+                3I/ATLAS, un fragmento que atraviesa nuestro sistema solar
+                portando información sobre procesos que ocurren más allá de
+                nuestras fronteras estelares. Este evento reúne a destacados
+                astrónomos y divulgadores científicos en un análisis único.
+              </p>
+
+              <p class="lead fs-5 text-light">
+                <em>Fragmentos Interestelares</em> propone comprender qué nos
+                revelan estos objetos sobre la formación de otros mundos, la
+                vida en el cosmos y nuestra posición en él. Esta es una
+                invitación a replantear nuestra mirada hacia el universo y a
+                preguntarnos:
+              </p>
+
+              <p class="fw-semibold fs-4 mt-3">
+                ¿Qué significa para la humanidad encontrarse con fragmentos
+                provenientes de más allá del Sol?
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="oradores">
+      <section>
         <div class="container">
           <div class="row g-4">
             <!-- Oradores -->
-            <div class="col-12 col-lg-4 p-4">
+            <div class="col-12 col-lg-4 p-4" id="oradores">
               <h4 class="mb-4 fw-bold text-uppercase text-light">Oradores</h4>
 
               <div class="row row-cols-2 g-4">
@@ -147,7 +166,7 @@
             </div>
 
             <!-- Agenda -->
-            <div id="agenda" class="col-12 col-lg-4 p-4">
+            <div class="col-12 col-lg-4 p-4" id="agenda">
               <h4 class="mb-4 fw-bold text-uppercase text-light">Agenda</h4>
               <ul class="list-unstyled text-light">
                 <li class="mb-2">
@@ -171,7 +190,7 @@
             </div>
 
             <!-- Localización -->
-            <div id="localizacion" class="col-12 col-lg-4 p-4 text-center">
+            <div class="col-12 col-lg-4 p-4 text-center" id="localizacion">
               <h4 class="mb-4 fw-bold text-uppercase text-light">
                 Localización
               </h4>
@@ -232,58 +251,6 @@
 
       <!-- Contacto -->
       <section id="contacto" class="bg-body py-5">
-        <div class="modal">
-          <div class="div-content-form">
-            <form id="formMessage" action="" class="p-3 mx-auto mb-5">
-              <h4 class="mb-4 w-100">Registrarme</h4>
-              <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-                <label for="inputName">Nombre:</label>
-                <input
-                  type="text"
-                  id="inputName"
-                  class="ms-3 w-100 ps-1 pe-4"
-                  placeholder="Nombre completo"
-                  minlength="3"
-                  maxlength="50"
-                  required
-                />
-                <i class="bi bi-person-fill"></i>
-              </div>
-              <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-                <label for="inputEmail">Email:</label>
-                <input
-                  type="email"
-                  id="inputEmail"
-                  class="ms-3 ps-1 pe-4"
-                  placeholder="ejemplo@correo.com"
-                  required
-                />
-                <i class="bi bi-envelope-at-fill"></i>
-              </div>
-              <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-                <label for="inputCargo">Cargo:</label>
-                <input
-                  type="text"
-                  id="inputCargo"
-                  class="ms-3 w-100 ps-1 pe-4"
-                  placeholder="Cargo ocupacional"
-                  minlength="3"
-                  maxlength="50"
-                  required
-                />
-                <i class="bi bi-briefcase-fill"></i>
-              </div>
-              <div class="div-results"></div>
-              <div class="div-buttons p-2 mt-4 d-flex justify-content-evenly">
-                <button type="submit" class="btn btn-primary" id="btn-send">
-                  Enviar
-                </button>
-                <button type="reset" class="btn btn-light">Limpiar</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
         <div class="container my-5">
           <div class="row text-center gy-4">
             <!-- Columna contacto -->
@@ -309,7 +276,7 @@
                   <i class="bi bi-instagram"></i>
                 </a>
                 <a href="#" class="text-decoration-none text-light">
-                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-twitter-x"></i>
                 </a>
                 <a href="#" class="text-decoration-none text-light">
                   <i class="bi bi-linkedin"></i>
@@ -328,6 +295,59 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal de registro  -->
+    <div class="modal">
+      <div class="div-content-form">
+        <form id="formMessage" action="" class="p-3 mx-auto mb-5">
+          <h4 class="mb-4 w-100">Registrarme</h4>
+          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
+            <label for="inputName">Nombre:</label>
+            <input
+              type="text"
+              id="inputName"
+              class="ms-3 w-100 ps-1 pe-4"
+              placeholder="Nombre completo"
+              minlength="3"
+              maxlength="50"
+              required
+            />
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
+            <label for="inputEmail">Email:</label>
+            <input
+              type="email"
+              id="inputEmail"
+              class="ms-3 ps-1 pe-4"
+              placeholder="ejemplo@correo.com"
+              required
+            />
+            <i class="bi bi-envelope-at-fill"></i>
+          </div>
+          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
+            <label for="inputCargo">Cargo:</label>
+            <input
+              type="text"
+              id="inputCargo"
+              class="ms-3 w-100 ps-1 pe-4"
+              placeholder="Cargo ocupacional"
+              minlength="3"
+              maxlength="50"
+              required
+            />
+            <i class="bi bi-briefcase-fill"></i>
+          </div>
+          <div class="div-results"></div>
+          <div class="div-buttons p-2 mt-4 d-flex justify-content-evenly">
+            <button type="submit" class="btn btn-primary" id="btn-send">
+              Enviar
+            </button>
+            <button type="reset" class="btn btn-light">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- JS -->
     <script

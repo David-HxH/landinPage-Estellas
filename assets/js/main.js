@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     inputCargo.value = "";
   });
 
-  // Smooth Scroll real con offset (para navbar)
+  // Cerrar el navbar al hacer clic en cualquier enlace dentro del navbar
   document.querySelectorAll('.navbar a[href^="#"]').forEach((link) => {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -99,8 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const destino = document.querySelector(hash);
       if (!destino) return;
 
-      // Tamaño aproximado del navbar
-      const offset = 80;
+      // Obtener altura REAL del navbar sticky
+      const navbar = document.querySelector(".navbar.sticky-top");
+      const offset = navbar ? navbar.offsetHeight : 0;
 
       const top = destino.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -109,11 +110,8 @@ document.addEventListener("DOMContentLoaded", () => {
         behavior: "smooth",
       });
 
-      // -------------------------------------------
-      // CERRAR EL NAVBAR EN MÓVIL
-      // -------------------------------------------
+      // Cerrar navbar en móvil
       const navbarCollapse = document.getElementById("navbarNavAltMarkup");
-
       if (navbarCollapse.classList.contains("show")) {
         const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
         bsCollapse.hide();
