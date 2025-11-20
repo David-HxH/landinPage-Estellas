@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Countdown</title>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --accent: #7dd3fc;
+      --muted: #94a3b8
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #071029 0%, #071a2a 100%);
+      font-family: Inter, system-ui, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+      color: #e6eef6
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    .container {
+      width: min(980px, 94%);
+      padding: 28px;
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.04));
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+      backdrop-filter: blur(6px)
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0
+    }
+
+    p.lead {
+      margin: 6px 0 0;
+      color: var(--muted)
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.04)
+    }
+
+    .number {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1
+    }
+
+    .label {
+      margin-top: 6px;
+      font-size: .85rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .08em
+    }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: 18px
+    }
+
+    .btn {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 8px 12px;
+      border-radius: 8px;
+      color: var(--muted);
+      cursor: pointer
+    }
+
+    .note {
+      font-size: .9rem;
+      color: var(--muted);
+      margin-top: 10px
+    }
+
+    @media (max-width:640px) {
+      .countdown {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .number {
+        font-size: 1.8rem
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2 class="note"> Evento: <span id="eventDate"></span>.</h2>
+    <br>
+  </header>
+
+  <main class="container" role="main">
+    <section aria-label="Cuenta regresiva" style="margin-top:18px">
+      <div id="countdown" class="countdown">
+        <div class="card" id="daysCard">
+          <div class="number" id="days">0</div>
+          <div class="label">Días</div>
+        </div>
+        <div class="card">
+          <div class="number" id="hours">00</div>
+          <div class="label">Horas</div>
+        </div>
+        <div class="card">
+          <div class="number" id="minutes">00</div>
+          <div class="label">Minutos</div>
+        </div>
+        <div class="card">
+          <div class="number" id="seconds">00</div>
+          <div class="label">Segundos</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const target = new Date('2025-12-21T09:00:00');           // Target: 21 December 2025, at 09:00:00 hora local
+
+    // Formatea fecha + hora (usa el mismo objeto `target`)
+    (function setEventLabel() {
+      const span = document.getElementById('eventDate');
+      if (!span) return;
+      const datePart = target.toLocaleDateString('es-CL', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+      });
+      const hh = target.getHours(); // 9
+      const mm = String(target.getMinutes()).padStart(2, '0'); // "00"
+      span.textContent = `${datePart} a las ${hh}:${mm}`;
+    })();
+
+
+    const d = document.getElementById('days'), h = document.getElementById('hours'), m = document.getElementById('minutes'), s = document.getElementById('seconds');
+    const pad = n => String(n).padStart(2, '0');
+    function tick() {
+      const now = new Date();
+      let diff = target - now;
+      if (diff <= 0) { d.textContent = '0'; h.textContent = '00'; m.textContent = '00'; s.textContent = '00'; return; }
+      const t = Math.floor(diff / 1000);
+      d.textContent = Math.floor(t / 86400);
+      h.textContent = pad(Math.floor(t % 86400 / 3600));
+      m.textContent = pad(Math.floor(t % 3600 / 60));
+      s.textContent = pad(t % 60);
+    }
+    tick();
+    setInterval(tick, 1000);
+  </script>
+</body>
+</html>

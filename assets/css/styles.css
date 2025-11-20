@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.navbar {
+  margin-top: 0;
+  padding-top: 0;
+  background: transparent;
+  width: 100%;
+  z-index: 10;
+}
+
+.bg-hero {
+  padding-top: 46px;
+  background-image: url("../img/cielo-estrellado-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #c2c2c2;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.bg-hero {
+  position: relative;
+  z-index: 2;
+}
+
+/* formulario*/
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#formMessage {
+  width: 320px;
+  max-width: 320px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: #0b1220;
+  transition: all 0.3s ease-in-out;
+}
+
+#formMessage h4 {
+  text-align: center;
+}
+
+#formMessage input {
+  max-width: 210px;
+}
+
+#formMessage .div-inputs {
+  position: relative;
+  align-items: center;
+}
+
+#formMessage .div-inputs input {
+  color: black;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#formMessage i {
+  right: 6px;
+  color: #0853b4;
+  position: absolute;
+}
+
+#btn-send {
+  border: 1px solid #fff;
+}
+
+.modal.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* cuenta regresiva */
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #7dd3fc;
+  --muted: #94a3b8;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+p.lead {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.number {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.label {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 10px;
+}
