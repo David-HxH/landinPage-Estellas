@@ -23,7 +23,9 @@
 
   <body data-bs-theme="dark">
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg py-1 sticky-top bg-body-tertiary shadow-sm">
+    <nav
+      class="navbar navbar-expand-lg py-1 sticky-top bg-body-tertiary shadow-sm"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">Conferencias 2025</a>
 
@@ -297,55 +299,104 @@
     </footer>
 
     <!-- Modal de registro  -->
-    <div class="modal">
-      <div class="div-content-form">
-        <form id="formMessage" action="" class="p-3 mx-auto mb-5">
-          <h4 class="mb-4 w-100">Registrarme</h4>
-          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-            <label for="inputName">Nombre:</label>
-            <input
-              type="text"
-              id="inputName"
-              class="ms-3 w-100 ps-1 pe-4"
-              placeholder="Nombre completo"
-              minlength="3"
-              maxlength="50"
-              required
-            />
-            <i class="bi bi-person-fill"></i>
+    <div
+      class="modal fade"
+      id="modalRegister"
+      tabindex="-1"
+      aria-labelledby="modalRegisterLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-2">
+          <!-- HEADER -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalRegisterLabel">Registrarme</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
           </div>
-          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-            <label for="inputEmail">Email:</label>
-            <input
-              type="email"
-              id="inputEmail"
-              class="ms-3 ps-1 pe-4"
-              placeholder="ejemplo@correo.com"
-              required
-            />
-            <i class="bi bi-envelope-at-fill"></i>
+
+          <!-- BODY -->
+          <div class="modal-body">
+            <form id="formMessage" action="">
+              <!-- Nombre -->
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Nombre</label>
+
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    id="inputName"
+                    class="form-control pe-5"
+                    placeholder="Nombre completo"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                  />
+
+                  <i
+                    class="bi bi-person-fill position-absolute top-50 end-0 translate-middle-y me-3"
+                  ></i>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    id="inputEmail"
+                    class="form-control pe-5"
+                    placeholder="ejemplo@correo.com"
+                    required
+                  />
+
+                  <i
+                    class="bi bi-envelope-at-fill position-absolute top-50 end-0 translate-middle-y me-3"
+                  ></i>
+                </div>
+              </div>
+
+              <!-- Cargo -->
+              <div class="mb-3">
+                <label for="inputCargo" class="form-label">Cargo</label>
+
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    id="inputCargo"
+                    class="form-control pe-5"
+                    placeholder="Cargo ocupacional"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                  />
+
+                  <i
+                    class="bi bi-briefcase-fill position-absolute top-50 end-0 translate-middle-y me-3"
+                  ></i>
+                </div>
+              </div>
+
+              <!-- Resultados -->
+              <div class="div-results"></div>
+            </form>
           </div>
-          <div class="div-inputs mb-3 w-100 d-flex justify-content-between">
-            <label for="inputCargo">Cargo:</label>
-            <input
-              type="text"
-              id="inputCargo"
-              class="ms-3 w-100 ps-1 pe-4"
-              placeholder="Cargo ocupacional"
-              minlength="3"
-              maxlength="50"
-              required
-            />
-            <i class="bi bi-briefcase-fill"></i>
-          </div>
-          <div class="div-results"></div>
-          <div class="div-buttons p-2 mt-4 d-flex justify-content-evenly">
-            <button type="submit" class="btn btn-primary" id="btn-send">
+
+          <!-- FOOTER -->
+          <div class="modal-footer">
+            <button type="reset" class="btn btn-light" form="formMessage">
+              Limpiar
+            </button>
+            <button type="submit" class="btn btn-primary" form="formMessage">
               Enviar
             </button>
-            <button type="reset" class="btn btn-light">Limpiar</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
