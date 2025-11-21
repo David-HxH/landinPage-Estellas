@@ -32,7 +32,7 @@ body {
 
 /***************************************************** carousel  */
 .carrusel .carousel-item img {
-  height: 350px !important;   /* altura fija */
+  height: 350px !important;
   width: 100%;
   object-fit: cover;
 }
@@ -44,8 +44,8 @@ body {
 
 .carousel-caption h5,
 .carousel-caption p {
-  color: #fff !important;     /* fuerza blanco */
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* mejora la lectura */
+  color: #fff !important;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
 .carousel-caption {
@@ -54,17 +54,21 @@ body {
     rgba(0, 0, 0, 0.65),
     rgba(0, 0, 0, 0)
   );
-  padding: 20px;
+  padding: 12px;
   border-radius: 10px;
+  left: 0;
+  right: 0;
+  width: auto;
+  bottom: 0;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 45px;           /* reduce ancho */
-  height: 45px;          /* reduce alto */
-  background-color: rgba(0, 0, 0, 0.4); /* fondo suave */
-  border-radius: 50%;    /* botones redondos */
-  top: 50%;              /* centrar verticalmente */
+  width: 45px;          
+  height: 45px;      
+  background-color: rgba(0, 0, 0, 0.4); 
+  border-radius: 50%;    
+  top: 50%;        
   transform: translateY(-50%);
 }
 
