@@ -1,6 +1,7 @@
-# 🌌 Fragmentos Interestelares – Conferencias 2025
+# 🌌 Fragmentos Interestelares – Proyecto de Landing Page (2025)
 
-Bienvenido al sitio oficial del evento *Fragmentos Interestelares 2025*. Esta landing page presenta información del evento, oradores, agenda, localización, cuenta regresiva dinámica y formulario de registro.
+Este repositorio contiene un **proyecto de aprendizaje en desarrollo web**, donde se construye una landing page inspirada en un evento astronómico ficticio llamado *Fragmentos Interestelares 2025*.  
+El objetivo del proyecto es practicar maquetación, diseño responsivo, JavaScript y uso de Bootstrap.
 
 ## 🚀 Tecnologías utilizadas
 - **HTML5**
@@ -10,52 +11,52 @@ Bienvenido al sitio oficial del evento *Fragmentos Interestelares 2025*. Esta la
 - **Git & GitHub**
 
 ## 🎯 Objetivo del proyecto
-Crear una página moderna, responsiva y visualmente atractiva que permita mostrar:
-- Oradores destacados
-- Agenda del evento
-- Localización
-- Cuenta regresiva en tiempo real
-- Registro mediante modal
+Este proyecto busca crear una página moderna y responsiva que permita practicar conceptos como:
+- Componentes de Bootstrap
+- Maquetación y diseño responsivo
+- JavaScript para funciones dinámicas
+- Gestión de versiones con Git y GitHub
 
-Este proyecto practica:
-- Diseño responsivo
-- Maquetación web
-- Uso de Bootstrap 5
-- Control de versiones con Git
+La página incluye secciones como:
+- Oradores destacados
+- Información del evento
+- Cuenta regresiva en tiempo real
+- Localización
+- Formulario de registro mediante modal
 
 ## 📸 Vista previa
-*(Aquí puedes agregar una captura más adelante, por ejemplo: `/assets/img/preview.png`)*
+*(Puedes agregar una captura más adelante, por ejemplo: `/assets/img/preview.png`)*
 
 ## 📍 Demo del sitio
-👉 **https://tusitioweb.github.io/evento-interestelar**
+👉 **https://tuusuario.github.io/fragmentos-interestelares**  
+*(Reemplazar con el enlace real cuando esté publicado)*
 
 ## 👩‍🚀 Oradores destacados
+Esta sección muestra oradores reconocidos del mundo astronómico, utilizados solo con fines educativos:
 - **Avi Loeb** — Astrofísico de Harvard  
 - **José Maza** — Premio Nacional de Ciencias Exactas  
-- **Neil deGrasse Tyson** — Director del Hayden Planetarium  
-- **Carl Sagan** — Visionario de la exploración del cosmos  
+- **Neil deGrasse Tyson** — Divulgador científico  
+- **Carl Sagan** — Referente histórico de la astronomía  
 
 ## ⏳ Cuenta regresiva
-El sitio incluye una cuenta regresiva que muestra en tiempo real:
-- Días
-- Horas
-- Minutos
-- Segundos
+Incluye una cuenta regresiva dinámica que muestra:
+- Días  
+- Horas  
+- Minutos  
+- Segundos  
 
-Controlada por **countdown.js**.
+Controlada mediante **countdown.js**, actualizada cada segundo.
 
 ## 📝 Formulario de registro
-El formulario (en modal) incluye validaciones HTML para:
-- Nombre
-- Email
-- Cargo
-
-Botones:
-- **Enviar**
-- **Limpiar**
+El formulario (dentro de un modal Bootstrap) incluye:
+- Validaciones HTML5  
+- Campos: Nombre, Email, Cargo  
+- Botón **Enviar**  
+- Botón **Limpiar**  
 
 ## 📂 Cómo clonar este repositorio
 Si deseas revisar o modificar el código:
 
 ```bash
-git clone https://github.com/tu-usuario/fragmentos-interestelares.git
+git clone https://github.com/David-HxH/landinPage-Estellas.git
+
