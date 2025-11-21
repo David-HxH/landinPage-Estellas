@@ -1,93 +1,61 @@
-🚀 Conferencias 2025 – Fragmentos Interestelares
+# 🌌 Fragmentos Interestelares – Conferencias 2025
 
-Página web informativa creada para el evento Fragmentos Interestelares 2025, inspirado en la llegada del objeto interestelar 3I/ATLAS.
-Incluye información sobre los oradores, agenda, localización, cuenta regresiva al evento y un formulario de registro.
+Bienvenido al sitio oficial del evento *Fragmentos Interestelares 2025*. Esta landing page presenta información del evento, oradores, agenda, localización, cuenta regresiva dinámica y formulario de registro.
 
-📸 Vista previa del proyecto
+## 🚀 Tecnologías utilizadas
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **Bootstrap 5**
+- **Git & GitHub**
 
-Sitio de evento moderno con Bootstrap 5, diseño responsivo, tema oscuro, modal personalizado y navegación con scroll suave.
+## 🎯 Objetivo del proyecto
+Crear una página moderna, responsiva y visualmente atractiva que permita mostrar:
+- Oradores destacados
+- Agenda del evento
+- Localización
+- Cuenta regresiva en tiempo real
+- Registro mediante modal
 
-🛠️ Tecnologías utilizadas
+Este proyecto practica:
+- Diseño responsivo
+- Maquetación web
+- Uso de Bootstrap 5
+- Control de versiones con Git
 
-HTML5
+## 📸 Vista previa
+*(Aquí puedes agregar una captura más adelante, por ejemplo: `/assets/img/preview.png`)*
 
-CSS3
+## 📍 Demo del sitio
+👉 **https://tusitioweb.github.io/evento-interestelar**
 
-Bootstrap 5.3
+## 👩‍🚀 Oradores destacados
+- **Avi Loeb** — Astrofísico de Harvard  
+- **José Maza** — Premio Nacional de Ciencias Exactas  
+- **Neil deGrasse Tyson** — Director del Hayden Planetarium  
+- **Carl Sagan** — Visionario de la exploración del cosmos  
 
-Bootstrap Icons
+## ⏳ Cuenta regresiva
+El sitio incluye una cuenta regresiva que muestra en tiempo real:
+- Días
+- Horas
+- Minutos
+- Segundos
 
-JavaScript (ES6+)
+Controlada por **countdown.js**.
 
-jQuery (solo para scroll suave)
+## 📝 Formulario de registro
+El formulario (en modal) incluye validaciones HTML para:
+- Nombre
+- Email
+- Cargo
 
-Modal y componentes nativos de Bootstrap
+Botones:
+- **Enviar**
+- **Limpiar**
 
-Diseño responsivo y mobile-first
+## 📂 Cómo clonar este repositorio
+Si deseas revisar o modificar el código:
 
-✨ Características principales
-🧭 Navegación
-
-Menú responsive con collapse para móviles.
-
-Scroll suave hacia cada sección.
-
-Ajuste automático que evita que el navbar sticky tape el contenido.
-
-👩‍🚀 Oradores
-
-Galería responsiva con imágenes y descripción de:
-
-Avi Loeb
-
-José Maza
-
-Neil DeGrasse Tyson
-
-Carl Sagan
-
-📅 Agenda del evento
-
-Lista de charlas con horarios.
-
-📍 Localización
-
-Fotografía + información del recinto (Movistar Arena, Chile).
-
-⏳ Cuenta regresiva
-
-Temporizador dinámico con:
-
-Días
-
-Horas
-
-Minutos
-
-Segundos
-
-Actualizados en tiempo real por countdown.js.
-
-📝 Formulario de registro
-
-Formulario dentro de un modal personalizado:
-
-Nombre
-
-Email
-
-Cargo
-
-Validaciones HTML
-
-Botones enviar/limpiar
-
-📄 Licencia
-
-Este proyecto fue creado con fines educativos y personales.
-Puedes usarlo como referencia o base para tus propios proyectos.
-
-🙌 Autor
-
-Desarrollado por David Mondaca Saavedra
-Si deseas contactar, ¡no dudes en abrir un issue o escribir!
+```bash
+git clone https://github.com/tu-usuario/fragmentos-interestelares.git
