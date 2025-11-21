@@ -24,13 +24,6 @@ La página incluye secciones como:
 - Localización
 - Formulario de registro mediante modal
 
-## 📸 Vista previa
-*(Puedes agregar una captura más adelante, por ejemplo: `/assets/img/preview.png`)*
-
-## 📍 Demo del sitio
-👉 **https://tuusuario.github.io/fragmentos-interestelares**  
-*(Reemplazar con el enlace real cuando esté publicado)*
-
 ## 👩‍🚀 Oradores destacados
 Esta sección muestra oradores reconocidos del mundo astronómico, utilizados solo con fines educativos:
 - **Avi Loeb** — Astrofísico de Harvard  
