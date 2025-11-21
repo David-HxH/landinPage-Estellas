@@ -30,6 +30,64 @@ body {
   z-index: 2;
 }
 
+/***************************************************** carousel  */
+.carrusel .carousel-item img {
+  height: 350px !important;   /* altura fija */
+  width: 100%;
+  object-fit: cover;
+}
+
+.carrusel {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff !important;     /* fuerza blanco */
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7); /* mejora la lectura */
+}
+
+.carousel-caption {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 45px;           /* reduce ancho */
+  height: 45px;          /* reduce alto */
+  background-color: rgba(0, 0, 0, 0.4); /* fondo suave */
+  border-radius: 50%;    /* botones redondos */
+  top: 50%;              /* centrar verticalmente */
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* blanco */
+}
+
+
 /***************************************************** cuenta regresiva */
 :root {
   --bg: #0f1724;

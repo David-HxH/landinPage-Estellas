@@ -75,7 +75,7 @@
     </header>
 
     <main>
-      <section class="py-5 bg-dark text-light" id="eventAbout">
+      <section class="py-3 bg-dark text-light" id="eventAbout">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-10 text-center">
@@ -100,6 +100,104 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="carrusel my-4 px-3">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img
+                src="assets/img/carrusel/imagen-1-atlas.jpg"
+                class="d-block w-100 carousel-img"
+                alt="Imagen del cometa ATLAS"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Cometa ATLAS — Captura desde el hemisferio norte</h5>
+                <p>
+                  Esta imagen muestra la impresionante cola luminosa del cometa
+                  ATLAS, observada durante su punto de mayor actividad en 2020.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img
+                src="assets/img/carrusel/imagen-2-atlas.webp"
+                class="d-block w-100 carousel-img"
+                alt="Imagen del cometa ATLAS"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fragmentación del núcleo del cometa</h5>
+                <p>
+                  Aquí se aprecia la desintegración parcial del cometa, un
+                  fenómeno que ocurre cuando se acerca demasiado al Sol.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img
+                src="assets/img/carrusel/imagen-3-cometa-atlas.jpg"
+                class="d-block w-100 carousel-img"
+                alt="Imagen del cometa ATLAS"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>ATLAS iluminando el cielo estrellado</h5>
+                <p>
+                  Una fotografía de larga exposición que muestra la estela del
+                  cometa atravesando la bóveda celeste nocturna.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones next/prev -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </section>
 
